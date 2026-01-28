@@ -22,4 +22,38 @@ This project is ideal for:
 
 ---
 
-## 📂 Project Structure
+---
+
+## 🖥 How to Run
+
+1. Clone or download the repository  
+2. Place it in your local PHP environment (XAMPP, WAMP, Laragon, etc.)  
+3. Open in browser:
+
+
+You will see the invoice preview and a button to send it by email.
+
+---
+
+## ✉ Email Sending (Demo Mode)
+
+By default, **no real email is sent**.
+
+To enable real SMTP sending:
+
+1. Open `send_invoice.php`
+2. Replace the placeholder SMTP settings:
+
+```php
+$mail->Host       = 'smtp.yourprovider.com';
+$mail->Username   = 'your-email@example.com';
+$mail->Password   = 'your-password';
+$mail->setFrom('your-email@example.com', 'Your Name');
+
+$mail->send();
+invoice_template.php
+sample_data.php
+
+
+
+
